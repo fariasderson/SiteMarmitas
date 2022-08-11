@@ -10,11 +10,9 @@ Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que qu
 
 <ul>
 
-	<li<ahref="donarita.php"title="Tutoriais"alt="Tutoriais">Home</a</li>
-	
-	<li><a href="#" title="Artigos" alt="Artigos">Dona Rita</a></li>			
-	<li><a href="#" title="Suporte" alt="Suporte">Contato</a></li>
-	
+	<li><a href="donarita.php" title="Home" alt="Hoe">Home</a></li>
+				<li><a href="#" title="Dona Rita" alt="Dona Rita">Dona Rita</a></li>
+				<li><a href="#" title="Contato" alt="Contato">Contato</a></li>	
 </ul>
 
 
@@ -22,11 +20,6 @@ Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que qu
 
 - Esta estrutura puxa do banco de dados as informações e imprime na tela, ela faz esse processo para cada produto do cardapio
 
-<section class="main-cardapio">
-                <header class="main-cardapio-header2">
-                    <h1>Cardápio Dona Rita</h1>
-                    <p>Desfrute dos nosso pratos mais variados!</p>
-                </header>
             
                 <?php
 				    foreach($marmitas as $key => $value){
@@ -45,7 +38,7 @@ Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que qu
 				    }
 			    ?>
             
-        </section>
+       
 
 
 **ESTRUTURA DE REPETIÇÃO PARA O CORPO DA PAGINA2
@@ -87,7 +80,7 @@ Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que qu
 			?>
         </section>
         
-*LISTA NÃO ORDENADA PARA O RODAPÉ
+*  LISTA NÃO ORDENADA PARA O RODAPÉ
 <ul>
 
                 <li><a href="#">Informações da Empresa</a></li>
@@ -97,3 +90,35 @@ Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que qu
                 <li><a href="#">Blog Dona Rita</a></li>
 
             </ul>
+	    
+	 
+	 
+## Capturas de Tela
+
+
+* Cabeçalho da pagina.
+
+![Cabeçalho do Site](https://user-images.githubusercontent.com/105613391/184245506-133c57d5-4508-4061-ada9-ca86a18e4656.png)
+
+
+* Corpo da pagina.
+
+![Corpo do Site](https://user-images.githubusercontent.com/105613391/184245667-1c205902-eb1f-4be4-82e9-e81df2b785de.png)
+
+
+* Rodapé da pagina.
+	    
+![Rodapé do Site](https://user-images.githubusercontent.com/105613391/184245580-68f7122c-aca0-4014-88ca-7220e2ea6587.png)
+	    
+
+* Cabeçalho da pagina 2.
+
+![Cabeçalho pagina 2 do Site](https://user-images.githubusercontent.com/105613391/184246052-7929e6e4-096d-4045-9349-679daac9afb9.png)
+
+
+
+* Rodapé da pagina 2.
+	    
+![Rodapé Pagina 2 do Site](https://user-images.githubusercontent.com/105613391/184245920-6d9f382b-aa4c-419d-a2c9-0c482f7e3ad3.png)
+	    
+	    
