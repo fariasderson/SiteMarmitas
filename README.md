@@ -4,9 +4,9 @@
 Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que queira vender.Este site usa estruturas de repetitição juntamente com matrizes multidimencionais.
 
 
-##PARTES DO CÓDIGO PAGINA 2.
+## PARTES DO CÓDIGO PAGINA.
 
-*LISTA NÃO ORDENADA PARA O CABEÇALHO
+* LISTA NÃO ORDENADA PARA O CABEÇALHO
 
 <ul>
 
@@ -16,7 +16,7 @@ Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que qu
 </ul>
 
 
-*ESTRUTURA DE REPETIÇÃO PARA O CORPO DA PAGINA
+* ESTRUTURA DE REPETIÇÃO PARA O CORPO DA PAGINA
 
 - Esta estrutura puxa do banco de dados as informações e imprime na tela, ela faz esse processo para cada produto do cardapio
 
@@ -41,9 +41,9 @@ Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que qu
        
 
 
-**ESTRUTURA DE REPETIÇÃO PARA O CORPO DA PAGINA2
+* ESTRUTURA DE REPETIÇÃO PARA O CORPO DA PAGINA2
 
--Esta estrutura de repetição busca as informções no banco de dados, e imprime individualmente as informações de cada produto na segunda pagina.
+- Esta estrutura de repetição busca as informções no banco de dados, e imprime individualmente as informações de cada produto na segunda pagina.
 
 <section class="main-cardapio">
             
