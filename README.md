@@ -4,4 +4,88 @@
 Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que queira vender.Este site usa estruturas de repetitição juntamente com matrizes multidimencionais.
 
 
+##PARTES DO CÓDIGO PAGINA 2.
 
+*LISTA NÃO ORDENADA PARA O CABEÇALHO
+
+<ul>
+				<li><a href="donarita.php" title="Tutoriais" alt="Tutoriais">Home</a></li>
+				<li><a href="#" title="Artigos" alt="Artigos">Dona Rita</a></li>
+				<li><a href="#" title="Suporte" alt="Suporte">Contato</a></li>
+			</ul>
+
+
+*ESTRUTURA DE REPETIÇÃO PARA O CORPO DA PAGINA
+
+- Esta estrutura puxa do banco de dados as informações e imprime na tela, ela faz esse processo para cada produto do cardapio
+
+<section class="main-cardapio">
+                <header class="main-cardapio-header2">
+                    <h1>Cardápio Dona Rita</h1>
+                    <p>Desfrute dos nosso pratos mais variados!</p>
+                </header>
+            
+                <?php
+				    foreach($marmitas as $key => $value){
+			    ?>
+			    <article class="article-box-descricao" >
+				    <a href="donarita2.php?id=<?=$value['id'];?>"><img class="id-img" src=<?=$value['imagem'];?>></a>
+				    <div class="box-descricao"> 
+                        <div class="box-descricao-tamanho" >
+                            <h4><?=$value['titulo'];?></h4>
+                        </div>
+                        <h6><?=$value['tamanho'];?></h6>
+				        <h3><?=substr($value['valor'], 0, 150);?></h3>                
+                    </div>
+			    </article>
+			    <?php
+				    }
+			    ?>
+            
+        </section>
+
+
+*
+
+<section class="main-cardapio">
+            
+            <?php
+                $id = $_GET['id'];
+
+				foreach($marmitas as $key => $value){
+                    if($value['id'] == $id){
+			?>
+			<article class="article-img-descricao">
+				<a href="#"><img class="id-img2" src=<?=$value['imagem'];?>></a>               	
+			</article>           
+            <article class="article-id-descricao">
+                <div class="id-descricao" >
+                    <h2><?=$value['titulo'];?></h2>
+                    <h4><?=$value['tamanho'];?></h4>
+				    <h1><?=$value['valor'];?></h1>
+                    <h4><?=$value['contato'];?></h4>
+                </div>
+                <div>
+                    <button class="cardapio-btn" type="submit">Comprar</button>
+                </div class="cardapio-contato" > 
+                              
+            </article>
+            <article class="box-informacoes">
+                <div class="box-informacoes-div" >
+                    <h2><?=$value['titulo2'];?></h2>
+                    <p><?=substr($value['ingredientes'], 0, 600);?></p>   
+                    </article>
+            </div>
+			<?php
+                    }
+				}
+			?>
+        </section>
+        
+*LISTA NÃO ORDENADA PARA O RODAPÉ
+<ul>
+                <li><a href="#">Informações da Empresa</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Blog Dona Rita</a></li>
+
+            </ul>
