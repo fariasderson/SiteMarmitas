@@ -9,10 +9,13 @@ Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que qu
 *LISTA NÃO ORDENADA PARA O CABEÇALHO
 
 <ul>
-	<li><a href="donarita.php" title="Tutoriais" alt="Tutoriais">Home</a></li>
+
+	<li<ahref="donarita.php"title="Tutoriais"alt="Tutoriais">Home</a</li>
 	
 	<li><a href="#" title="Artigos" alt="Artigos">Dona Rita</a></li>			
-	<li><a href="#" title="Suporte" alt="Suporte">Contato</a></li>			</ul>
+	<li><a href="#" title="Suporte" alt="Suporte">Contato</a></li>
+	
+</ul>
 
 
 *ESTRUTURA DE REPETIÇÃO PARA O CORPO DA PAGINA
@@ -86,8 +89,11 @@ Estrutura de site desenvolvido para venda de marmitas ou qualquer produto que qu
         
 *LISTA NÃO ORDENADA PARA O RODAPÉ
 <ul>
+
                 <li><a href="#">Informações da Empresa</a></li>
+		
                 <li><a href="#">Contato</a></li>
+		
                 <li><a href="#">Blog Dona Rita</a></li>
 
             </ul>
